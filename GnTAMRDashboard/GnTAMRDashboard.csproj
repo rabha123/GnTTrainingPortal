@@ -1,0 +1,367 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C0B0F847-FF30-41F9-AE02-97C0E1CE314C}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GnTAMRDashboard</RootNamespace>
+    <AssemblyName>GnTAMRDashboard</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.Data.v14.1, Version=14.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v14.1.Core, Version=14.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.RichEdit.v14.1.Core, Version=14.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v14.1, Version=14.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Web.ASPxThemes.v14.1, Version=14.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Web.v14.1, Version=14.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v14.1, Version=14.1.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="sapnco, Version=3.0.0.42, Culture=neutral, PublicKeyToken=50436dca5c7f7d23, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\sapnco.dll</HintPath>
+    </Reference>
+    <Reference Include="sapnco_utils, Version=3.0.0.42, Culture=neutral, PublicKeyToken=50436dca5c7f7d23, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\sapnco_utils.dll</HintPath>
+    </Reference>
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\sapnco.dll" />
+    <Content Include="bin\sapnco_utils.dll" />
+    <Content Include="css\base-admin-responsive.css" />
+    <Content Include="css\bootstrap-responsive.min.css" />
+    <Content Include="css\bootstrap.css" />
+    <Content Include="css\bootstrap.min.css" />
+    <Content Include="css\errorstyle.css" />
+    <Content Include="css\font-awesome-ie7.css" />
+    <Content Include="css\font-awesome-ie7.min.css" />
+    <Content Include="css\font-awesome.css" />
+    <Content Include="css\font-awesome.min.css" />
+    <Content Include="css\pages\dashboard.css" />
+    <Content Include="css\pages\faq.css" />
+    <Content Include="css\pages\plans.css" />
+    <Content Include="css\pages\reports.css" />
+    <Content Include="css\pages\signin.css" />
+    <Content Include="css\SAcss\bootstrap.css" />
+    <Content Include="css\SAcss\bootstrap.min.css" />
+    <Content Include="css\SAcss\errorstyle.css" />
+    <Content Include="css\SAcss\sweetalert2.css" />
+    <Content Include="css\style.css" />
+    <Content Include="css\sweetalert2.css" />
+    <Content Include="Custom\AdminControl.ascx" />
+    <Content Include="Custom\ApprovalControl.ascx" />
+    <Content Include="Custom\APRPWRControl.ascx" />
+    <Content Include="Custom\AttendeeControl.ascx" />
+    <Content Include="Custom\DEOControl.ascx" />
+    <Content Include="Custom\FDBControl.ascx" />
+    <Content Include="Custom\RPTControl.ascx" />
+    <Content Include="Custom\TrainingEditControl.ascx" />
+    <Content Include="font\fontawesome-webfont.svg" />
+    <Content Include="Global.asax" />
+    <Content Include="Images\kegif.gif" />
+    <Content Include="Images\slack_load.gif" />
+    <Content Include="img\body-bg.png" />
+    <Content Include="img\Co.gif" />
+    <Content Include="img\ess_logo.png" />
+    <Content Include="img\Ex.gif" />
+    <Content Include="img\fa1q.png" />
+    <Content Include="img\faq.jpg" />
+    <Content Include="img\faq.png" />
+    <Content Include="img\Faq1.png" />
+    <Content Include="img\fb.jpg" />
+    <Content Include="img\glyphicons-halflings-white.html" />
+    <Content Include="img\glyphicons-halflings.html" />
+    <Content Include="img\h_icon_phone_b.png" />
+    <Content Include="img\icono-mail.png" />
+    <Content Include="img\icons-sa7c41345d9.png" />
+    <Content Include="img\kelogo.jpg" />
+    <Content Include="img\linkedIn.jpg" />
+    <Content Include="img\logout-button-blue-hi.jpg" />
+    <Content Include="img\logout-button-blue-hi.png" />
+    <Content Include="img\message_avatar1.png" />
+    <Content Include="img\message_avatar2.png" />
+    <Content Include="img\pc.jpg" />
+    <Content Include="img\Rss.jpg" />
+    <Content Include="img\signin\check.png" />
+    <Content Include="img\signin\fb_btn.png" />
+    <Content Include="img\signin\password.png" />
+    <Content Include="img\signin\twitter_btn.png" />
+    <Content Include="img\signin\user.png" />
+    <Content Include="img\twitter.jpg" />
+    <Content Include="js\base.js" />
+    <Content Include="js\bootstrap.js" />
+    <Content Include="js\chart.min.js" />
+    <Content Include="js\charts\area.js" />
+    <Content Include="js\charts\bar.js" />
+    <Content Include="js\charts\donut.js" />
+    <Content Include="js\charts\line.js" />
+    <Content Include="js\charts\pie.js" />
+    <Content Include="js\excanvas.min.js" />
+    <Content Include="js\faq.js" />
+    <Content Include="js\full-calendar\fullcalendar.css" />
+    <Content Include="js\full-calendar\fullcalendar.min.js" />
+    <Content Include="js\guidely\guidely-number.png" />
+    <Content Include="js\guidely\guidely.css" />
+    <Content Include="js\guidely\guidely.min.js" />
+    <Content Include="js\jquery-1.7.2.min.js" />
+    <Content Include="js\signin.js" />
+    <Content Include="Login.aspx" />
+    <Content Include="unAuthorize.aspx" />
+    <Content Include="Views\Admin.aspx" />
+    <Content Include="Views\APR.aspx" />
+    <Content Include="Views\DEO.aspx" />
+    <Content Include="Views\FDB.aspx" />
+    <Content Include="Views\LogOut.aspx" />
+    <Content Include="Views\PWR.aspx" />
+    <Content Include="Views\RPT.aspx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Custom\AdminControl.ascx.cs">
+      <DependentUpon>AdminControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Custom\AdminControl.ascx.designer.cs">
+      <DependentUpon>AdminControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Custom\ApprovalControl.ascx.cs">
+      <DependentUpon>ApprovalControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Custom\ApprovalControl.ascx.designer.cs">
+      <DependentUpon>ApprovalControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Custom\APRPWRControl.ascx.cs">
+      <DependentUpon>APRPWRControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Custom\APRPWRControl.ascx.designer.cs">
+      <DependentUpon>APRPWRControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Custom\AttendeeControl.ascx.cs">
+      <DependentUpon>AttendeeControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Custom\AttendeeControl.ascx.designer.cs">
+      <DependentUpon>AttendeeControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Custom\DEOControl.ascx.cs">
+      <DependentUpon>DEOControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Custom\DEOControl.ascx.designer.cs">
+      <DependentUpon>DEOControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Custom\FDBControl.ascx.cs">
+      <DependentUpon>FDBControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Custom\FDBControl.ascx.designer.cs">
+      <DependentUpon>FDBControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Custom\RPTControl.ascx.cs">
+      <DependentUpon>RPTControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Custom\RPTControl.ascx.designer.cs">
+      <DependentUpon>RPTControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Custom\TrainingEditControl.ascx.cs">
+      <DependentUpon>TrainingEditControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Custom\TrainingEditControl.ascx.designer.cs">
+      <DependentUpon>TrainingEditControl.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SAPManager\SAPManager.cs" />
+    <Compile Include="SecurityManager\ConnectionManager.cs" />
+    <Compile Include="SecurityManager\DAL.cs" />
+    <Compile Include="SecurityManager\SecurityManager.cs" />
+    <Compile Include="SecurityManager\UserManagement.cs" />
+    <Compile Include="Site1.Master.cs">
+      <DependentUpon>Site1.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site1.Master.designer.cs">
+      <DependentUpon>Site1.Master</DependentUpon>
+    </Compile>
+    <Compile Include="unAuthorize.aspx.cs">
+      <DependentUpon>unAuthorize.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="unAuthorize.aspx.designer.cs">
+      <DependentUpon>unAuthorize.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UtilityManager\UtilityManager.cs" />
+    <Compile Include="Views\Admin.aspx.cs">
+      <DependentUpon>Admin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Admin.aspx.designer.cs">
+      <DependentUpon>Admin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\APR.aspx.cs">
+      <DependentUpon>APR.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\APR.aspx.designer.cs">
+      <DependentUpon>APR.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\DEO.aspx.cs">
+      <DependentUpon>DEO.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\DEO.aspx.designer.cs">
+      <DependentUpon>DEO.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\FDB.aspx.cs">
+      <DependentUpon>FDB.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\FDB.aspx.designer.cs">
+      <DependentUpon>FDB.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\LogOut.aspx.cs">
+      <DependentUpon>LogOut.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\LogOut.aspx.designer.cs">
+      <DependentUpon>LogOut.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\PWR.aspx.cs">
+      <DependentUpon>PWR.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\PWR.aspx.designer.cs">
+      <DependentUpon>PWR.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\RPT.aspx.cs">
+      <DependentUpon>RPT.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\RPT.aspx.designer.cs">
+      <DependentUpon>RPT.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Site1.Master" />
+    <Content Include="font\fontawesome-webfont.eot" />
+    <Content Include="font\fontawesome-webfont.svgz" />
+    <Content Include="font\fontawesome-webfont.ttf" />
+    <Content Include="font\fontawesome-webfont.woff" />
+    <Content Include="font\fontawesome-webfontd41d.eot" />
+    <Content Include="font\FontAwesome.otf" />
+    <Content Include="img\119635-0-1.pdf" />
+    <Content Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="Properties\PublishProfiles\TrainingPortal.pubxml" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="obj\Debug\TempPE\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>1205</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:1208/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,6 @@
+E:\Shared\KE Application Development\KE Projects\.net Projects\GnTAMRDashboard\GnTAMRDashboard\GnTAMRDashboard\bin\GnTAMRDashboard.dll.config
+E:\Shared\KE Application Development\KE Projects\.net Projects\GnTAMRDashboard\GnTAMRDashboard\GnTAMRDashboard\bin\GnTAMRDashboard.dll
+E:\Shared\KE Application Development\KE Projects\.net Projects\GnTAMRDashboard\GnTAMRDashboard\GnTAMRDashboard\bin\GnTAMRDashboard.pdb
+E:\Shared\KE Application Development\KE Projects\.net Projects\GnTAMRDashboard\GnTAMRDashboard\GnTAMRDashboard\obj\Release\GnTAMRDashboard.dll.licenses
+E:\Shared\KE Application Development\KE Projects\.net Projects\GnTAMRDashboard\GnTAMRDashboard\GnTAMRDashboard\obj\Release\GnTAMRDashboard.dll
+E:\Shared\KE Application Development\KE Projects\.net Projects\GnTAMRDashboard\GnTAMRDashboard\GnTAMRDashboard\obj\Release\GnTAMRDashboard.pdb
